@@ -59,3 +59,5 @@ export default {
 ## License
 
 This library is MIT licensed.
+
+Inspired by [Tailwind Heroicons](https://github.com/tailwindlabs/heroicons)
