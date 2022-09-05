@@ -15,12 +15,12 @@ npm install cmicons-react
 Now each icon can be imported individually as a React component:
 
 ```js
-import { ActivityIcon } from 'cmicons-react/jam'
+import { AlarmClockIcon } from 'cmicons-react/jam'
 
 function MyComponent() {
   return (
     <div>
-      <ActivityIcon />
+      <AlarmClockIcon />
       <p>...</p>
     </div>
   )
@@ -42,16 +42,16 @@ Now each icon can be imported individually as a Vue component:
 ```vue
 <template>
   <div>
-    <BeakerIcon class="h-6 w-6 text-blue-500"/>
+    <AlarmClockIcon style="color:red"/>
     <p>...</p>
   </div>
 </template>
 
 <script>
-import { ActivityIcon } from 'cmicons-vue/jam'
+import { AlarmClockIcon } from 'cmicons-vue/jam'
 
 export default {
-  components: { ActivityIcon }
+  components: { AlarmClockIcon }
 }
 </script>
 ```
