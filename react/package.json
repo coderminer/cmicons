@@ -1,7 +1,7 @@
 {
   "name": "cmicons-react",
   "license": "MIT",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "keywords": [
     "svg",
@@ -16,7 +16,7 @@
     "url": "https://github.com/coderminer/cmicons.git"
   },
   "files": [
-    "jam"
+    "jam","humble"
   ],
   "publishConfig": {
     "access": "public"
