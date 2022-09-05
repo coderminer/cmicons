@@ -1,0 +1,21 @@
+{
+  "name": "cmicons-vue",
+  "license": "MIT",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "homepage": "https://github.com/coderminer/cmicons#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/coderminer/cmicons.git"
+  },
+  "files": [
+    "jam"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "vue": ">= 3"
+  }
+}
