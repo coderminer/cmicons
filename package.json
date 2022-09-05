@@ -9,7 +9,7 @@
     "prepublishOnly": "npm run build",
     "lint": "node ./scripts/verify-names.js",
     "prebuild": "rimraf ./{jam} ./{vue,react}/{jam}",
-    "build": "npm run build-jam && npm run build-react && npm run build-vue",
+    "build": "npm run build-jam && npm run build-humble && npm run build-react && npm run build-vue",
     "build-react": "node ./scripts/build.js react",
     "build-vue": "node ./scripts/build.js vue",
     "build-jam": "rimraf ./jam && svgo --config=svgo.jam.yaml -f ./src/jam -o ./optimized/jam --pretty --indent=2 &&  cp -R ./optimized/jam ./jam",
