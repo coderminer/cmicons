@@ -114,16 +114,17 @@ async function main(package) {
 
   console.log(`Building ${package} package...`)
 
-  await Promise.all([
-    rimraf(`./${package}/jam/*`)
-  ])
+  await Promise.all([rimraf(`./${package}/jam/*`), rimraf(`./${package}/humble/*`)])
 
   await Promise.all([
-
     buildIcons(package, 'jam', 'cjs'),
     buildIcons(package, 'jam', 'esm'),
+    buildIcons(package, 'humble', 'cjs'),
+    buildIcons(package, 'humble', 'esm'),
     ensureWriteJson(`./${package}/jam/esm/package.json`, esmPackageJson),
     ensureWriteJson(`./${package}/jam/package.json`, cjsPackageJson),
+    ensureWriteJson(`./${package}/humble/esm/package.json`, esmPackageJson),
+    ensureWriteJson(`./${package}/humble/package.json`, cjsPackageJson),
   ])
 
   return console.log(`Finished building ${package} package.`)

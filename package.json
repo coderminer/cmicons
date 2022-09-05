@@ -12,7 +12,8 @@
     "build": "npm run build-jam && npm run build-react && npm run build-vue",
     "build-react": "node ./scripts/build.js react",
     "build-vue": "node ./scripts/build.js vue",
-    "build-jam": "rimraf ./jam && cp -R ./src/jam ./jam"
+    "build-jam": "rimraf ./jam && svgo --config=svgo.jam.yaml -f ./src/jam -o ./optimized/jam --pretty --indent=2 &&  cp -R ./optimized/jam ./jam",
+    "build-humble": "rimraf ./humble && svgo --config=svgo.humble.yaml -f ./src/humble -o ./optimized/humble --pretty --indent=2 &&  cp -R ./optimized/humble ./humble"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
