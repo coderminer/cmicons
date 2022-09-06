@@ -42,16 +42,16 @@ Now each icon can be imported individually as a Vue component:
 ```vue
 <template>
   <div>
-    <AlarmClockIcon style="color:red"/>
+    <SearchIcon style="color:red"/>
     <p>...</p>
   </div>
 </template>
 
 <script>
-import { AlarmClockIcon } from 'cmicons-vue/jam'
+import { SearchIcon } from 'cmicons-vue/jam'
 
 export default {
-  components: { AlarmClockIcon }
+  components: { SearchIcon }
 }
 </script>
 ```
